@@ -1,0 +1,49 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.product-container {
+  position: relative;
+}
+
+.meal-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.product-container:hover .meal-image {
+  opacity: 0.3;
+}
+
+.product-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /* background-color: #04AA6D; */
+  color: black;
+  font-size: 40px;
+  /* padding: 16px 32px; */
+}
+/* .product-container:hover .meal-name{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
